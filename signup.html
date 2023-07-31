@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .home{
+           position: absolute;
+            background-color: rgb(13, 13, 13);
+           height: 100%;
+           width: 100%;
+           
+           
+        }
+        .main{
+            margin: 3% auto;
+            padding:20px;
+            background-color: rgb(255, 243, 243);
+            position: relative;
+            width: 400px;
+            height: 600px;
+            justify-content: center;
+            border-radius: 20px;
+        }
+        h1{
+            margin: 5% auto;
+            padding: 10px 20px;
+            position: relative;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+        .input-group{
+           top: 120px;
+           position: absolute;
+           width: 390px;
+           transition: .5s;
+           margin: 0;
+        }
+        .lab{
+            margin-right: 10px 0px;
+            padding: 10px 5px;
+            position: relative;
+            font-size: 20px;
+
+        }
+        .input-text{
+           
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+            border-radius: 3px;
+            border: 1px solid black;
+
+        }
+        .select-option{
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+           
+            border: 1px solid black;
+            border-radius: 3px;
+
+        }
+        .sign-btn{
+            width: 100%;
+            padding: 10px ;
+            margin: 10px 0;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border: none;
+        }
+    
+
+        
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="main">
+            <h1>Signup</h1>
+            <form action="post" class="input-group">
+                <label for="name" class="lab">Name:</label>
+                <input type="text" id="name"  class="input-text">
+                <label for="batch" class="lab">Batch:</label>
+                <select name="batch" id="batch" class="select-option">
+                   
+                    <option value="sigma 2.0">sigma 2.0</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Machine larning">Machine larning</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    
+                </select>
+                <label for="email" class="lab">Email:</label>
+                <input type="text" id="email" class="input-text">
+                <label for="age" class="lab">Age:</label>
+                <input type="text" id="age"  class="input-text">
+                <label for="password" class="lab">Password:</label>
+                <input type="text" id="password"  class="input-text">
+                <button class="sign-btn">Signup</button>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
